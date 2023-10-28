@@ -11,9 +11,11 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 from pathlib import Path
+from django.urls import reverse_lazy
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
 # Quick-start development settings - unsuitable for production
@@ -30,14 +32,31 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
+#APPS = [   'base', ]
+
 INSTALLED_APPS = [
+    'rest_framework',
+    'api',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-]
+    'API9ISC22',
+    #'django.contrib.sites',
+    #'allauth',
+    #'allauth.account',
+    #'allauth.socialaccount',
+    #'allauth.socialaccount.providers.google',
+] #+APPS
+
+# settings.py
+
+#MICROSOFT_GRAPH_CLIENT_ID = 'ID'
+#MICROSOFT_GRAPH_CLIENT_SECRET = 'IDSecret'
+#MICROSOFT_GRAPH_REDIRECT_URI = 'http://localhost:8000/'
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -54,7 +73,7 @@ ROOT_URLCONF = 'API9ISC22.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -75,8 +94,12 @@ WSGI_APPLICATION = 'API9ISC22.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'postgres',
+        'USER': 'postgres',
+        'PASSWORD': 'Pokemonrojofueg@1',
+        'HOST': 'localhost',  # O la dirección IP de tu servidor PostgreSQL
+        'PORT': '',       # Puerto predeterminado de PostgreSQL
     }
 }
 
@@ -103,9 +126,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'es-pe'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/Lima'
 
 USE_I18N = True
 
@@ -118,8 +141,27 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
+#STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+#STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'),]
+#EMAIL_HOST = 'smtp.googlemail.com'
+#EMAIL_PORT = 587
+#EMAIL_HOST_USER='javipika.151@gmail.com'
+#EMAIL_HOST_PASSWORD =''
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
+#AUTHETICATION_BACKENDS =('django.contrib.auth.backends.ModelBackend','allauth.account.auth_backends.AuthenticationsBackend',)
+
+#SITE_ID = 1
+#LOGIN_REDIRECT_URL = '/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_USE_TLS = True
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'javipika.150@gmail.com'
+EMAIL_HOST_PASSWORD = 'bmou qgmy wiwd sspd'
+#LOGIN_REDIRECT_URL = reverse_lazy('home')
+

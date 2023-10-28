@@ -1,0 +1,38 @@
+/* Estilos CSS personalizados */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ff8080, #80b3ff);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.recovery-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.led {
+    width: 10px;
+    height: 10px;
+    background-color: #e74c3c; /* LED rojo */
+    border-radius: 50%;
+    animation: blink 1s infinite alternate;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
