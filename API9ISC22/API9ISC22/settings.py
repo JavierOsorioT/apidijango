@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 from pathlib import Path
-from django.urls import reverse_lazy
+#from django.urls import reverse_lazy
 import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -86,16 +86,34 @@ TEMPLATES = [
     },
 ]
 
+#WSGI_APPLICATION = 'API9ISC22.wsgi.application'
 WSGI_APPLICATION = 'API9ISC22.wsgi.application'
+#gunicorn API9ISC22.wsgi:application
+
 
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
+#sitio web
+#"""
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres',
+        'NAME': 'iscteschi_lc7r',
+        'USER': 'javier123',
+        'PASSWORD': 'UEff27LJbPz9uzZ3DUg00ENH3unD4xR6',
+        'HOST': 'oregon-postgres.render.com',  # O la dirección IP de tu servidor PostgreSQL
+        'PORT': '5432',       # Puerto predeterminado de PostgreSQL
+    }
+}
+#"""
+#Sitio local
+"""
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'prueba',
         'USER': 'postgres',
         'PASSWORD': 'Pokemonrojofueg@1',
         'HOST': 'localhost',  # O la dirección IP de tu servidor PostgreSQL
@@ -103,6 +121,7 @@ DATABASES = {
     }
 }
 
+"""
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
