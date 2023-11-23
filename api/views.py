@@ -19,7 +19,7 @@ from django.contrib.auth.decorators import login_required
 # Create your views here.
 
 @login_required(login_url='login')
-
+#PAra la graficas
 def grafica(request):
     registros = Respuestaschatbot.objects.all()
     return {'registros': registros}
@@ -52,8 +52,9 @@ def Enc(request):
     # Combina los contextos de ambas vistas en un solo diccionario
     context = {**grafica_data, **tuvista_data, **tuvista_data2}
     return render (request, 'encuesta.html',context)
+################################################################################
 
-
+#Registro de usuarios
 def SignupPage(request):
     """b"""
     if request.method=='POST':
@@ -95,9 +96,11 @@ def LogoutPage(request):
 def Comedor(request):
     return render (request, 'menucomida.html')
 
+def Index2(request):
+    return render (request, 'index2.html')
 
-
-
+def Registro(request):
+    return render (request, 'registro.html')
 
                             #Correo     
 def contact(request):
