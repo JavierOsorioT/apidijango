@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-+fr+@(k*kwmffqbq*31jkv5gt=nalgoelkw0l!8hbk@z1m%(vs
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://pruebapi-bazm.onrender.com']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
