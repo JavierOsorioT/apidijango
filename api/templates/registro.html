@@ -1,4 +1,5 @@
-<!doctype html>
+{% load static %}
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <title>Webleb</title>
@@ -7,37 +8,60 @@
   <!-- Bootstrap CSS v5.2.1 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-  <link href="/css/styles.css" rel="stylesheet">
+  <link href="{% static 'registro.js' %}" rel="stylesheet">
+  <link rel='stylesheet' type='text/css' media='screen' href="{% static 'registro.css' %}">
 </head>
 <body class="d-flex align-items-center">
   <div class="container">
     <div class="row justify-content-center" style="margin:20px;">
       <div class="col-lg-6 col-md-8 login-box">
         <div class="col-lg-12 login-title">
-          Sign Up
+          Registro
         </div>
         <div class="col-lg-12 login-form">
           <form>
             <div class="form-group">
-              <label class="form-control-label">Username</label>
-              <input type="text" class="form-control">
+              {% csrf_token %}	
+              <label type="username" class="form-control-label" id="username" name="username"
+              autocomplete="off" placeholder="Usuario" minlength="1" maxlength="50"
+              required>Nombre</label>
+
+              <input type="text" class="form-control" id="username" name="username"
+              autocomplete="off" placeholder="Usuario" minlength="1" maxlength="50"
+              required>
             </div>
+
             <div class="form-group">
-              <label class="form-control-label">Email</label>
-              <input type="text" class="form-control">
+              <label type="email" class="form-control-label" id="email" name="email"
+              autocomplete="off" placeholder="Correo" maxlength="500"
+              required>Correo</label>
+
+              <input type="text" class="form-control" id="username" name="username"
+              autocomplete="off" placeholder="Correo" minlength="1" maxlength="50"
+              required>
+              
             </div>
-            <div class="form-group">
-              <label class="form-control-label">Phone number</label>
-              <input type="text" class="form-control">
-            </div>
-                <div class="form-group">
-                  <label class="form-control-label">Password</label>
-                  <input type="password" class="form-control" i>
+
+              <div class="form-group">
+              <label type="password" class="form-control-label" id="password1"
+              name="password1" autocomplete="off" placeholder="Contraseña" 
+              minlength="1" maxlength="50" required>Contraseña</label>
+              <input type="password" class="form-control" id="password1"
+              name="password1" autocomplete="off" placeholder="Contraseña" 
+              minlength="1" maxlength="50" required i>
                 </div>
                 <div class="col-12 login-btm login-button justify-content-center d-flex">
-                  <button type="submit" class="btn btn-outline-primary">Register</button>
+                  
+                <button type="submit" class="btn btn-outline-primary" value="Registrar"
+                >Register</button>
+                {% if messages %}
+				        {% for message in messages %}
+				        <div class="alert alert-success" role="alert">
+				        {{message}}
                 </div>
             </div>
+            {% endfor %}
+				    {% endif %}
             </form>
           </div>
         </div>

@@ -1,25 +1,28 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <title>
-    Webleb
+    Login xd
   </title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
   integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
   crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel='stylesheet' type='text/css' media='screen' href="{% static 'index2.css' %}">
+  <script src="{% static 'index2.js' %}"></script>
 </head>
 <body style="display: flex; justify-content:center ; align-items: center;height: 100vh;overflow: hidden;">
   <form action="#" id="login-form">
+    {% csrf_token %}
     <div class="heading">Login</i></div>
     <div class="left">
-      <label for="email">Email</label> <br />
-      <input type="email" name="email" id="email" /> <br />
+      <label for="email" type="">Email</label> <br />
+      <input type="text" name="email" id="email" /> <br />
       <label for="password">Password</label> <br />
       <input type="password" name="password" id="pass" /> <br />
-      <input type="submit" value="Login" />
+      <input type="submit" value="Login" /><input type="submit" value="Registro" />
     </div>
     <div class="right">
       <div class="connect">Connect with</div>
@@ -34,6 +37,6 @@
       </a>
     </div>
   </form>  
-  <script src="/js/main.js"></script>
+  <script src="{% static 'index2.js' %}"></script>
 </body>
 </html>

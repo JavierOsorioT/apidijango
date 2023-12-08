@@ -16,4 +16,12 @@ class Respuestaschatbot(models.Model):
 
     def _str_(self):
         return str(self.nombre_completo)
+
+# Create your models here.
+class Registros(models.Model):
+    id = models.AutoField(primary_key=True)
+    user = models.CharField(max_length=30)
+    password = models.CharField(max_length=50)
+    password_repeat = models.CharField(max_length=50)
+    email = models.EmailField()
     

@@ -19,6 +19,7 @@ from django.contrib.auth.decorators import login_required
 # Create your views here.
 
 @login_required(login_url='login')
+
 #PAra la graficas
 def grafica(request):
     registros = Respuestaschatbot.objects.all()
@@ -89,20 +90,23 @@ def LoginPage(request):
             return HttpResponse ("El Usuario o Contraseña son Incorrectos")
     return render (request, 'index.html')
 
+########################################################Paginas############################################################################### 
 def LogoutPage(request):
     logout(request)
     return redirect('login')
-                            #Paginas 
+                            
 def Comedor(request):
     return render (request, 'menucomida.html')
 
-def Index2(request):
-    return render (request, 'index2.html')
+def Inicio(request):
+    return render (request, 'inicio.html')
 
 def Registro(request):
     return render (request, 'registro.html')
+def Novedad(request):
+    return render (request, 'novedad.html')
 
-                            #Correo     
+#######################################################Correo################################################################################     
 def contact(request):
     if request.method == "POST":
         username=request.POST['username']
@@ -121,7 +125,7 @@ def contact(request):
             body=template,
             from_email=settings.EMAIL_HOST_USER,
             to=[email]
-         )
+                            )
         
         email.fail_silenty = False
         email.send()
@@ -141,8 +145,6 @@ def contact(request):
         
 #         Registros = Registros.objets.create(Nombre=Nombre, Correo=Correo, Contraseña=Contraseña)
 #         return redirect ('/')
-   
-   
 # class Registro(APIView):
 #     template_name='registro.html'
 #     def get (self,request):
