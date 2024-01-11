@@ -28,6 +28,9 @@ SECRET_KEY = 'django-insecure-+fr+@(k*kwmffqbq*31jkv5gt=nalgoelkw0l!8hbk@z1m%(vs
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
+""" DEFAULT_FILE_STORAGE = 'storages.backends.gcloud.GoogleCloudStorage'
+GS_BUCKET_NAME = 'bucket-django'
+STATICFILES_STORAGE = 'storages.backends.gcloud.GoogleCloudStorage' """
 
 
 # Application definition
@@ -146,6 +149,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
 
+
 GOOGLE_API_KEY= 'AIzaSyDnMxon6wUV6ayEaA5Q-AT16I6AtOZWkqk'
 #AIzaSyDnMxon6wUV6ayEaA5Q-AT16I6AtOZWkqk
 LANGUAGE_CODE = 'es-pe'
@@ -162,7 +166,9 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
-STATIC_URL = '/static/'
+STATIC_URL = "https://console.cloud.google.com/storage/browser/stactics/"
+""" export GOOGLE_APPLICATION_CREDENTIALS="../../maps-tutorial-406100-b7dcaf0abd73.json" """
+
 #STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 #STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'),]
 #EMAIL_HOST = 'smtp.googlemail.com'

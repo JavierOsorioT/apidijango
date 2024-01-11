@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "maps-tutorial-406100",
+  "private_key_id": "b7dcaf0abd73168078881486d21cc77f28ca84e5",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCxvfLjG78C2EMr\n6ZgqMHJ9DVsZ3x2UDe8k/iWLBvOG7LnQYcaIm2bngj4AdZeLPITvmbtBLoCcsZ0s\nb2ErpHoc35c+KEDo+vI1t86mR4o87M757ELEKLFoXv4edq6tDDZJpkr8tojFYwMa\nYLCR8YCeLBxWb9/8/GTJBOCmCK+9wPNDVNllKnAYf86/Q77WNyqNyGH4pLssViez\nhZaFXQ+VaIPOnw5Ev62zEG58cVEdiQhndsWKfboBUIYEZ8G2HKM9V0zfxMFdfMC/\nyREwrtZtQi3P6ZOVjT8lsaJEIa7AeZcZ+tbhCTz9TQ+WFp8rHf09MDrApefEGL7E\nw7++ogsDAgMBAAECggEALkLrsFu84/8owImsjrKMYerzfrDZMHtN9pllaSGWidQc\natXACDc2WeRGwfTZTCakzP38xHLXi7EY4QNeTa8iD1jMsyNj/Z+vIfckxJeTLddO\n6bKqEActYaZzyrcGMMkgahvroYna4FEschWfb2TlnoWJnJ/Cs0R38PAhjmVtZFwf\nl4LOIdgc1zyCXFsWIzbapNSYpCn0ESZu7x7pGNKg+yuXlOdeKPbMmhCgBRcpGKyC\nhwN++4mKB+xvGzwWpd51/YfePe50CeO9//oApVnw/3C5mZ2zoIlJZDqjkaNwC6qd\nbA+MFscElJs8lGVjFP8QlDLQ/QI14N+A4bU7ATefMQKBgQDzFDM/Tb+w1iV3DaXI\nWPaAIbiq1kdTMND0QyTEqvRWLTPneEBA4zYugsecLNTWSVjz7gqSR8j+JxP3tdU9\nxRIpdyhyVKko9XrcDHeJv5GcTUJDHJWmmLJt8IgnHPJ6uDf8jW2z6d1q9emK9lab\nfK+b2x3QIDWvWqdaelIDdtOWUwKBgQC7MKYLwLY0ccP/cs01VL0MEb1BBj7vtNMo\ntwQW06MWBloTFMsZd4ZG0BgqA82F+Y5o/enZCBd4huHehcEI3lycAfZWNI+V6OhM\nfETUleHyjacZNn5nA8J/a8aiLWe2nabPKibDrKl8LGLoTjoNgYKFJLKzJfZL684C\nm4+oicXCkQKBgQC9pJLe3o+hLVGJcpJWnmGiUay7S/XVh45eI0w6S43Y9ec6vWyT\nszCAVPPaeneKvyqxFJQWz/6VmnNPnQNC789dnmNl33siQ3KY3vkb9ONraDM8HL78\nfMEoWLJAoarj53l2hfiClwByBG0yR0IGiN6Q4ACAccCwkC9kvW3i2f/1lQKBgBYt\nCT7TMcK8x493tj/fLhZD87vEVahoL6vfIqjhoax2TC1+hSEbO9kfxf0UPkDk864U\nhqOjhcRNlmyaQ+gdD7Obt+c2itwjn4GQJ0dYClCF34npHshtdZlK11lXL7Y+rwhT\n4gvEZL/FMmJ7Af2fnirP0ivPD4KnCNzeOQKqb7dBAoGBANkf383NmiSaH/Mw0zIt\nQxtDPLB/5Pd6rBOTnwr7lO931GS9P3d8rp1EGnGtEVZeQcCDFHQpCgfwaMijGPJf\nMFxQ6WVc2IlMTmtKjsFbZ5AHGOs3rqZ/UI3qUbdo6TfGP/Ggcg9kYKPo1VirpsMG\nRv6dKvMyyArGNgQ0Jyi6pVE4\n-----END PRIVATE KEY-----\n",
+  "client_email": "nani-535@maps-tutorial-406100.iam.gserviceaccount.com",
+  "client_id": "106018052712144806027",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/nani-535%40maps-tutorial-406100.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
