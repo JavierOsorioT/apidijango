@@ -105,6 +105,24 @@ def Registro(request):
     return render (request, 'registro.html')
 def Novedad(request):
     return render (request, 'novedad.html')
+def Hambu(request):
+    return render (request, 'hambu.html')
+def Hotdog(request):
+    return render (request, 'hotdog.html')
+def Flautas(request):
+    return render (request, 'flautas.html')
+def Chilaquiles(request):
+    return render (request, 'chila.html')
+def Molletes(request):
+    return render (request, 'molletes.html')
+def Tortas(request):
+    return render (request, 'tortas.html')
+def Comida(request):
+    return render (request, 'comida.html')
+def Torta(request):
+    return render (request, 'torta.html')
+def Contacto(request):
+    return render (request, 'contacto.html')
 
 #######################################################Correo################################################################################     
 def contact(request):

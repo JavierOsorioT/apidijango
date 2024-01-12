@@ -11383,3 +11383,40 @@ pre {
   visibility: visible;
   opacity: 1;
 }
+/* Estilos generales */
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 576px) {
+  /* Agrega estilos específicos para pantallas pequeñas aquí */
+}
+
+/* Estilos para pantallas medianas */
+@media (min-width: 576px) and (max-width: 767px) {
+  /* Agrega estilos específicos para pantallas medianas aquí */
+}
+
+/* Estilos para pantallas grandes */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Agrega estilos específicos para pantallas grandes aquí */
+}
+
+/* Estilos para pantallas extra grandes */
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Agrega estilos específicos para pantallas extra grandes aquí */
+}
+
+/* Estilos para pantallas extra extra grandes */
+@media (min-width: 1200px) {
+  /* Agrega estilos específicos para pantallas extra extra grandes aquí */
+}
+
+
+#map {
+	height: 500px;
+	width: 100%;
+}
+#map2 {
+	height: 500px;
+	width: 100%;
+}
+

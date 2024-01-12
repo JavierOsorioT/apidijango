@@ -1,0 +1,69 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Reseña de los Chilaquiles</title>
+    <!-- Font icons -->
+    <link rel="stylesheet" href="{% static 'assets/vendors/themify-icons/css/themify-icons.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/vendors/animate/animate.css' %}">
+    <!-- Bootstrap + FoodHut main styles -->
+    <link rel="stylesheet" href="{% static 'css/food.css' %}">
+    <!-- Core -->
+    <script src="{% static 'assets/vendors/jquery/jquery-3.4.1.js' %}"></script>
+    <script src="{% static 'assets/vendors/bootstrap/bootstrap.bundle.js' %}"></script>
+    <!-- Bootstrap affix -->
+    <script src="{% static 'assets/vendors/bootstrap/bootstrap.affix.js' %}"></script>
+    <!-- Wow.js -->
+    <script src="{% static 'assets/vendors/wow/wow.js' %}"></script>
+    <!-- Google Maps -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8&callback=initMap"></script>
+    <!-- FoodHut js -->
+    <script src="{% static 'foodhut.js' %}"></script>
+    <script src="main.js"></script>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    <!-- Navbar -->
+    <nav class="custom-navbar navbar navbar-expand-lg navbar-dark fixed-top" data-spy="affix" data-offset-top="10">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'comedor' %}">Inicio</a>
+                </li>
+            </ul>
+            <a class="navbar-brand m-auto" href="#">
+                <img src="{% static 'fondocomida.png' %}" class="brand-img" alt="">
+                <span class="brand-txt">Food Hut</span>
+            </a>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="{% url 'login' %}" class="btn btn-primary ml-xl-4">Salir</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="header">
+        <h1>Chilaquiles</h1>
+    </div>
+
+    <div id="container">
+        <img src="{% static 'img/chilaquilesrojo.jpg' %}" alt="Imagen de hamburguesa" id="location-image">
+        <div id="info">
+            <h2>Varios sabores de Chilaquiles</h2>
+            <div class="text-muted">
+                <p><span class="ti-location-pin pr-3"></span> 
+                    Embárcate en un festín de sabores auténticos con nuestros chilaquiles, un plato que captura la esencia misma de la cocina mexicana. Preparados con tortillas de maíz crujientes y bañados en una salsa vibrante de tomate y chiles, cada bocado es una explosión de sabores que despiertan tus papilas gustativas. La mezcla perfecta de texturas entre las tortillas, el queso derretido y el toque fresco de crema y aguacate crea una sinfonía de delicias en cada plato. Ya sea que elijas la versión clásica o te aventures con opciones gourmet, nuestros chilaquiles son una experiencia culinaria que te transportará directamente a los sabores auténticos de México. ¡Descubre la magia de los chilaquiles en cada tenedor!
+                </p>
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="{% static 'foodhut.js' %}"></script>
+</body>
+</html>

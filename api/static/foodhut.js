@@ -34,13 +34,25 @@ $(document).ready(function(){
 new WOW().init();
 
 function initMap() {
-    var uluru = {lat: 37.227837, lng: -95.700513};
-    var map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 8,
-      center: uluru
+    var coord = {lat:19.4123676 ,lng: -98.927634};
+    var map = new google.maps.Map(document.getElementById('map'),{
+      zoom: 18,
+      center: coord
     });
     var marker = new google.maps.Marker({
-      position: uluru,
+      position: coord,
       map: map
     });
- }
+}
+
+function iniciarMap(){
+    var coord = {lat:19.4123676 ,lng: -98.927634};
+    var map = new google.maps.Map(document.getElementById('map'),{
+      zoom: 18,
+      center: coord
+    });
+    var marker = new google.maps.Marker({
+      position: coord,
+      map: map
+    });
+}

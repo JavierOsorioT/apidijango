@@ -16,6 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from api.views import *
+#from api.views import Hambuegesas2
 from api import views
 #from . import views  # Importa todas las vistas de tu aplicación actual
 
@@ -27,6 +28,14 @@ urlpatterns = [
     path('logout/', views.LogoutPage, name='logout'),
     path('comedor/', views.Comedor, name="comedor"),
     path('novedad/', views.Novedad, name="novedad"),
+    path('hambu/', views.Hambu, name="hambu"),
+    path('hotdog/', views.Hotdog, name="hotdog"),
+    path('flautas/', views.Flautas, name="flautas"),
+    path('molletes/', views.Molletes, name="molletes"),
+    path('comida/', views.Comida, name="comida"),
+    path('chila/', views.Chilaquiles, name="chila"),
+    path('torta/', views.Torta, name="torta"),
+    path('contacto/', views.Contacto, name="contacto"),
     path('inicio/', views.Inicio, name="inicio"),
     path('registro/', views.Registro, name="registro"),
     path('encuesta/', views.Enc, name="encuesta"),

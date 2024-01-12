@@ -6,10 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'style4.css' %}">
-    <script src="{% static 'style4.js' %}"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'main.css' %}">
 </head>
 <body>
     <!-- Contenido de tu página va aquí -->
+    <div id="header">
+        <h1>Ubicación del Comedor</h1>
+    </div>
+
+    <div id="container">
+        <div id="map"></div>
+        <div id="info">
+            <!-- Aquí puedes agregar la información sobre la ubicación -->
+            <h2>Este es la Ubicacion del tecnologico para el publico.</h2>            
+            <div class="text-muted">
+                <p><span class="ti-location-pin pr-3"></span> Chimalhuacán Estado de Mexico</p>
+                <p><span class="ti-support pr-3"></span> +52-55-50-44-70-20 </p>
+                <p><span class="ti-email pr-3"></span>http://www.teschi.edu.mx/</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="{% static 'main.js' %}"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnMxon6wUV6ayEaA5Q-AT16I6AtOZWkqk&callback=iniciarMap"></script>
 </body>
 </html>

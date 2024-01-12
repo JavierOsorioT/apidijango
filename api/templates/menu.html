@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'style4.css' %}">
+    <link rel="stylesheet" type="text/css" media="screen" href=" {% static 'style4.css' %}">
     <script src="main.js"></script>
 </head>
 <body>
@@ -20,7 +20,9 @@
         </div>
         <ul>
             <li><a id="home" href="{% url 'comedor' %}">Menu</a></li>
-            <li><a id="about" href="">"{% url 'contacto' %}"</a>Contacto</li>
+
+            <li><a id="about" href="{% url 'contacto' %}"></a>Contacto</li>
+            
             <li><a id="contact" href="{% url 'novedad' %}">Novedad</a></li>
             <li><a id="salida" href="{% url 'login' %}">Salir</a></li>
         </ul>
